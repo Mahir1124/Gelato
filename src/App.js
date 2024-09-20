@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './data/gelato_logo_black.svg'
+import HeroSection from './components/HeroSection';
+import cart from './data/cart.svg'
+import contact from './data/contact.svg'
+import INR from './data/INR.svg'
+import sign_in from './data/sign-in.svg'
+import Second_hero from './components/Second_hero';
+import Wcg from './components/Wcg';
+import Third_hero from './components/Third_hero';
+import Fourth_hero from './components/Fourth_hero';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <main>
+        <HeroSection />
+        <Second_hero />
+        <Wcg />
+        <Third_hero />
+        <Fourth_hero />
+      </main>
+      <Footer />
+      
     </div>
   );
 }
